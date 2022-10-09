@@ -1,3 +1,16 @@
+import Head from 'next/head';
+import Link from 'next/link';
+
 export default function FirstPost() {
-  return <h1>My First Post on Nextjs</h1>;
+  return (
+    <>
+      <Head>
+        <title>First Post</title>
+      </Head>
+      <h1>My First Post</h1>
+      <h2>
+        <Link href='/'>Back to Home</Link>
+      </h2>
+    </>
+  );
 }
